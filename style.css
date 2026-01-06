@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 380px; /* Tamaño optimizado para móvil */
+}
+
+/* Header */
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo-gob {
+    width: 80%;
+    max-width: 250px;
+    margin-bottom: 10px;
+}
+
+.banner-title {
+    background-color: #4a2c82;
+    color: white;
+    padding: 8px 0;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 1px;
+    clip-path: polygon(5% 0%, 95% 0%, 100% 50%, 95% 100%, 5% 100%, 0% 50%);
+}
+
+/* Tarjetas */
+.card {
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    margin-bottom: 15px;
+}
+
+.card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.photo {
+    width: 105px;
+    height: 135px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    object-fit: cover;
+}
+
+.type-badge {
+    text-align: center;
+    color: #8b1d79;
+}
+
+.type-text {
+    display: block;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.type-char {
+    font-size: 65px;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.name {
+    color: #8b1d79;
+    text-align: center;
+    font-size: 20px;
+    margin: 15px 0 25px 0;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+/* Grid de Información */
+.info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.info-box label {
+    display: block;
+    color: #8b1d79;
+    font-weight: bold;
+    font-size: 12px;
+    margin-bottom: 2px;
+}
+
+.info-box span {
+    display: block;
+    color: #333;
+    font-size: 13.5px;
+    word-break: break-all;
+}
+
+.link {
+    color: #0056b3 !important;
+    text-decoration: underline;
+}
+
+/* Responsividad */
+@media (max-width: 340px) {
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+}
